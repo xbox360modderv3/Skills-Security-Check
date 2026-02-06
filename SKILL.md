@@ -1,6 +1,6 @@
 ---
 name: Skills-Security-Check
-description: A hybrid security tool where the Agent MUST act as the intelligent analyzer. It scans codebases for risks and generates a visual dashboard.
+description: 通過靜態和AI檢查技能 Skills 安全風險、潛在威脅。當使用者請求檢查技能，掃描技能的時候啟動技能評測評估功能。Detect Skill vulnerabilities using static and AI checks. Automatically activate evaluation upon scan requests.
 ---
 
 # Skill: Skills-Security-Check
